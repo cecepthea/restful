@@ -1,0 +1,1 @@
+<blockquote>{{contact.fact}}</blockquote>

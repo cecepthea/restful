@@ -27,11 +27,10 @@ require.config({
     ]
 });
 
-//document.getElementsByTagName('html')[0].removeAttribute("ng-app");
-document.getElementsByTagName('html')[0].setAttribute("ng-app","");
+document.getElementsByTagName('html')[0].removeAttribute("ng-app");
 
-define(['require', 'lib/domReady', 'app'], function(require, domReady, app) {
+require(['angular', 'lib/domReady', 'routes'], function(angular, domReady, routes) {
     domReady(function() {
-        console.log('domReady');
+        angular.bootstrap(document, ['restfulApp']);
     });
 });

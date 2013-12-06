@@ -55,7 +55,7 @@ restfulApp.config(
                     templateUrl: 'home'
                 })
                         
-                .state('users', {
+                .state('contacts', {
                     url: '/users',                    
                     templateUrl: 'users/',
                     
@@ -71,7 +71,7 @@ restfulApp.config(
                         }]
                 })
 
-                .state('users.detail', {
+                .state('contacts.detail', {
                     url: '/{userID:[0-9]{1,4}}',
                     views: {
                         'thedetails': {
@@ -83,8 +83,8 @@ restfulApp.config(
                         }
                     }
                 })
-                .state('contact', {
-                    url: '/contact',
+                .state('debug', {
+                    url: '/debug',
                     templateProvider: ['$timeout',
                         function($timeout) { 
                             return $timeout(function() {
@@ -96,8 +96,8 @@ restfulApp.config(
                             }, 1);
                         }]
                 })
-                .state('envoie', {
-                   url: '/envoie',
+                .state('envois', {
+                   url: '/envois',
                    templateUrl: 'envoie',
                    controller: ['$scope', '$state', 'users', 'utils',
                     function($scope, $state, users, utils) {

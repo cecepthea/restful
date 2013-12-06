@@ -26,9 +26,9 @@
         $this->carabiner->js('lib/angular-animate.min.js');
         $this->carabiner->js('lib/angular-ui-router.js');
         $this->carabiner->js('lib/ui-bootstrap-custom-0.7.0.min.js');
-        $this->carabiner->js('controller.js');
+        $this->carabiner->js('non-amd.js');
 
-        $this->carabiner->display('js');
+//        $this->carabiner->display('js');
         ?>
         <!--[if IE]>
             <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -64,6 +64,6 @@
             </div>
         </div><!-- /site -->    
 
-<!--<script data-main="assets/js/require-main.js" src="assets/js/lib/require.js"></script>-->
+<script data-main="assets/js/require-main.js" src="assets/js/lib/require.js"></script>
     </body>
 </html>

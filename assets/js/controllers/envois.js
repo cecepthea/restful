@@ -1,5 +1,7 @@
-define(['libs/summertime'], function(summertime) {
+define(['bootstrap', 'summernote'], function(bootstrap, summernote) {
     return ['$scope', '$http', function($scope, $http) {
-                console.log(summertime);
+            $('textarea.body').summernote({
+                height: 300
+            });
         }];
 });

@@ -60,9 +60,7 @@ define(['restfulApp'], function(restfulApp) {
                             .state('envois', {
                         url: '/envois',
                         templateUrl: 'envoie',
-                        controller: ['$scope', '$state', 'utils',
-                            function($scope, $state, users, utils) {
-                            }]
+                        controller: 'envois'
                     });
                 }]);
 });

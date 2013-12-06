@@ -53,9 +53,9 @@ class Api extends REST_Controller
     function users_get()  
     {  
         $users = array(
-                        1 => array('id' => 1, 'name' => 'Some Guy', 'email' => 'example1@example.com', 'fact' => 'Loves swimming'),
-                        2 => array('id' => 2, 'name' => 'Person Face', 'email' => 'example2@example.com', 'fact' => 'Has a huge face'),
-                        3 => array('id' => 3, 'name' => 'Scotty', 'email' => 'example3@example.com', 'fact' => 'Is a Scott!', array('hobbies' => array('fartings', 'bikes'))),
+                        1 => array('id' => 1, 'name' => 'Joy Marlow', 'email' => 'example1@example.com', 'fact' => 'Some guy from the back who just loves swimming'),
+                        2 => array('id' => 2, 'name' => 'Marilyn Manson', 'email' => 'example2@example.com', 'fact' => 'Doesn\'t like to drive trucks'),
+                        3 => array('id' => 3, 'name' => 'Scott Carol', 'email' => 'example3@example.com', 'fact' => 'Mama still calls him Scotty', array('hobbies' => array('fartings', 'bikes'))),
                 );
           
         if($users)  

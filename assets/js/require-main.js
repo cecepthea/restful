@@ -5,7 +5,9 @@ require.config({
         'ngAnimate': 'lib/angular-animate.min',
         'uiRouter': ['//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.0/angular-ui-router.min', 'lib/angular-ui-router'],
         'uiBootstrap': 'lib/ui-bootstrap-custom-0.7.0.min',
-        'summernote': 'lib/summernote.min'
+        'bootstrap': ['//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min', 'lib/bootstrap.min'],
+        'summernote': 'lib/summernote.min',
+        'jQuery': ['//code.jquery.com/jquery-2.0.3.min', 'lib/jquery.min']
     },
     shim: {
         'angular': {exports: 'angular'},
